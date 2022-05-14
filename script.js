@@ -10,6 +10,7 @@ function verification(phrase) {
   input01.placeholder = phrase
   input01.style.display = 'inline'
   subm.style.display = 'inline'
+  resul.innerHTML = ''
 }
 
 var condit = 0
@@ -54,6 +55,7 @@ function _value_() {
   input01.value = ''
   input01.style.display = 'none'
   subm.style.display = 'none'
+  resul.style.display = 'inline'
 
   condit = 0
 }
@@ -109,15 +111,15 @@ function N_S() {
     condit = 8
   }
 
-  var button09 = document.querySelector('#btn10')
+  var button09 = document.querySelector('#btn09')
   button09.onclick = function () {
-    verification('Hexadecimal to Decimal')
+    verification('Hexadecimal to Binary')
     condit = 9
   }
 
-  var button10 = document.querySelector('#btn09')
+  var button10 = document.querySelector('#btn10')
   button10.onclick = function () {
-    verification('Hexadecimal to Binary')
+    verification('Hexadecimal to Decimal')
     condit = 10
   }
 }

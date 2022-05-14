@@ -5,85 +5,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Numeration System</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #caeadd;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    main ul li {
-      list-style: none;
-      margin: 10px;
-    }
-
-    div{
-      padding: 5px;
-      border: 5px solid #6c90d8;
-      border-radius: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      background: #a3dac4;
-      cursor: pointer;
-    }
-
-    #inp{
-      display: none;
-    }
-
-    #Subm{
-      padding: 5px;
-      margin-top: 20px;
-      border: 5px solid #40bb30;
-      border-radius: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      background: #dde00a;   
-      display: none;
-    }
-
-    input {
-      margin-top: 20px;
-      font-size: 40px;
-      width: 500px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body >
-  <head>
+<body>
+  <header>
     <h1>Numeration System</h1>
-  </head>
+    <h3>Project of the discipline of digital systems</h3>
+  </header>
+
   <main>
     <ul>
-      <li><div id="btn01">Binary to Decimal</div></li>
-      <li><div id="btn02">Binary to Octal</div></li>
-      <li><div id="btn03">Binary to Hexadecimal</div></li>
-      <li><div id="btn04">Octal to Binary</div></li>
-      <li><div id="btn05">Octal to Decimal</div></li>
-      <li><div id="btn06">Decimal to Binary</div></li>
-      <li><div id="btn07">Decimal to Octal</div></li>
-      <li><div id="btn08">Decimal to Hexadecimal</div></li>
-      <li><div id="btn09">Hexadecimal to Binary</div></li>
-      <li><div id="btn10">Hexadecimal to Decimal</div></li>
+        
+      <li><div id="btn01"><p>Binary to Decimal</p></div></li>
+      <li><div id="btn02"><p>Binary to Octal</p></div></li>
+      <li><div id="btn03"><p>Binary to Hexadecimal</p></div></li>
+      <li><div id="btn04"><p>Octal to Binary</p></div></li>
+      <li><div id="btn05"><p>Octal to Decimal</p></div></li>
+      <li><div id="btn06"><p>Decimal to Binary</p></div></li>
+      <li><div id="btn07"><p>Decimal to Octal</p></div></li>
+      <li><div id="btn08"><p>Decimal to Hexadecimal</p></div></li>
+      <li><div id="btn09"><p>Hexadecimal to Binary</p></div></li>
+      <li><div id="btn10"><p>Hexadecimal to Decimal</p></div></li>
+      
     </ul>
   </main>
   
-  <input type="text" id="inp" placeholder="">
-  <div id="Subm">Submit</div>
+  <div class="table">
+    <p>Bin | Hex | Oct <br>
+      &nbsp;0000|  &nbsp;0&nbsp; | &nbsp;0 &nbsp;
+      &nbsp;0001|  &nbsp;1&nbsp; | &nbsp;1 &nbsp;
+      &nbsp;0010|  &nbsp;2&nbsp; | &nbsp;2 &nbsp;
+      &nbsp;0011|  &nbsp;3&nbsp; | &nbsp;3 &nbsp;
+      &nbsp;0100|  &nbsp;4&nbsp; | &nbsp;4 &nbsp;
+      &nbsp;0101|  &nbsp;5&nbsp; | &nbsp;5 &nbsp;
+      &nbsp;0110|  &nbsp;6&nbsp; | &nbsp;6 &nbsp;
+      &nbsp;0111|  &nbsp;7&nbsp; | &nbsp;7 &nbsp;
+      &nbsp;1000|  &nbsp;8&nbsp; | &nbsp;10&nbsp;
+      &nbsp;1001|  &nbsp;9&nbsp; | &nbsp;11&nbsp;
+      &nbsp;1010|  &nbsp;A&nbsp; | &nbsp;12&nbsp;
+      &nbsp;1011|  &nbsp;B&nbsp; | &nbsp;13&nbsp;
+      &nbsp;1100|  &nbsp;C&nbsp; | &nbsp;14&nbsp;
+      &nbsp;1101|  &nbsp;D&nbsp; | &nbsp;15&nbsp;
+      &nbsp;1110|  &nbsp;E&nbsp; | &nbsp;16&nbsp;
+      &nbsp;1111|  &nbsp;F&nbsp; | &nbsp;17&nbsp;
+      <p></div>
+    
   
+  <section>
   <h2></h2>
+  <input type="text" id="inp" placeholder="">
+  
+  <div id="Subm">Submit</div>
+  </section>
+
+  <footer><h3>By Talismar</h3></footer>
   <script src="script.js" type="module"></script>
 </body>
 </html>

@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15vw 25vw 20vw 25vw 15vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header header header'
+    '. main table_ submit submit'
+    'footer footer footer footer footer'
+  ;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(to bottom right, tomato, #ffee008e);
+}
+
+header h1 {
+  font-size: 170px;
+  color: white;
+}
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+section {
+  grid-area: submit;
+}
+
+main ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+div {
+  padding: 5px;
+  width: 450px;
+
+  border: 5px solid #6c90d8;
+  border-radius: 10px;
+
+  text-align: center;
+  background: #a3dac4;
+  cursor: pointer;
+}
+
+div p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Subm {
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 400px;
+
+  font-weight: bold;
+  font-size: 40px;
+  background-image: linear-gradient(to bottom right, #6c7bce59, #e4dfdf6e);
+  /* display: none; */
+}
+
+#Subm:hover {
+  background-image: linear-gradient(to bottom right, #6c7bceab, #e4dfdfab);
+}
+
+input {
+  margin-top: 20px;
+  font-size: 50px;
+  width: 550px;
+  border: none;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+.table {
+  grid-area: table_;
+  width: 300px;
+  height: 545px;
+}
+
+.table p {
+  font-size: 25px;
+}
