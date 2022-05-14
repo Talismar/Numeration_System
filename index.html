@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeration System</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #caeadd;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main ul li {
+      list-style: none;
+      margin: 10px;
+    }
+
+    div{
+      padding: 5px;
+      border: 5px solid #6c90d8;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #a3dac4;
+      cursor: pointer;
+    }
+
+    #inp{
+      display: none;
+    }
+
+    #Subm{
+      padding: 5px;
+      margin-top: 20px;
+      border: 5px solid #40bb30;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #dde00a;   
+      display: none;
+    }
+
+    input {
+      margin-top: 20px;
+      font-size: 40px;
+      width: 500px;
+    }
+  </style>
+</head>
+<body >
+  <head>
+    <h1>Numeration System</h1>
+  </head>
+  <main>
+    <ul>
+      <li><div id="btn01">Binary to Decimal</div></li>
+      <li><div id="btn02">Binary to Octal</div></li>
+      <li><div id="btn03">Binary to Hexadecimal</div></li>
+      <li><div id="btn04">Octal to Binary</div></li>
+      <li><div id="btn05">Octal to Decimal</div></li>
+      <li><div id="btn06">Decimal to Binary</div></li>
+      <li><div id="btn07">Decimal to Octal</div></li>
+      <li><div id="btn08">Decimal to Hexadecimal</div></li>
+      <li><div id="btn09">Hexadecimal to Binary</div></li>
+      <li><div id="btn10">Hexadecimal to Decimal</div></li>
+    </ul>
+  </main>
+  
+  <input type="text" id="inp" placeholder="">
+  <div id="Subm">Submit</div>
+  
+  <h2></h2>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
