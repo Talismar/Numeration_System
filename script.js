@@ -43,10 +43,10 @@ function _value_() {
     resul.innerHTML = a.decimal_to_hexadecimal(parseInt(input01.value))
   }
   else if (condit == 9) {
-    resul.innerHTML = a.hexadecimal_to_binary(input01.value)
+    resul.innerHTML = a.hexadecimal_to_binary(input01.value.toUpperCase())
   }
   else if (condit == 10) {
-    resul.innerHTML = a.hexadecimal_to_decimal(input01.value)
+    resul.innerHTML = a.hexadecimal_to_decimal(input01.value.toUpperCase())
   }
   else {
     resul.innerHTML = ''
