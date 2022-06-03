@@ -42,6 +42,10 @@ footer {
   grid-area: footer;
 }
 
+footer h3 {
+  font-size: 20px;
+}
+
 section {
   grid-area: submit;
 }

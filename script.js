@@ -13,23 +13,46 @@ function verification(phrase) {
   resul.innerHTML = ''
 }
 
+function verif_error(arr, cond) {
+  let array_ = arr.split("")
+
+  for (let i of array_) {
+    if (parseInt(i) > cond) {
+      window.alert('ERROR...')
+      return "error"
+    }
+  }
+
+  return 'right'
+}
+
 var condit = 0
 function _value_() {
 
   if (condit == 1) {
-    resul.innerHTML = a.binary_to_decimal(input01.value)
+    if (verif_error(input01.value, 1) == "right") {
+      resul.innerHTML = a.binary_to_decimal(input01.value)
+    }
   }
   else if (condit == 2) {
-    resul.innerHTML = a.binary_to_oct(input01.value)
+    if (verif_error(input01.value, 1) == "right") {
+      resul.innerHTML = a.binary_to_oct(input01.value)
+    }
   }
   else if (condit == 3) {
-    resul.innerHTML = a.binary_to_hex(input01.value)
+    if (verif_error(input01.value, 1) == "right") {
+      resul.innerHTML = a.binary_to_hex(input01.value)
+    }
   }
   else if (condit == 4) {
-    resul.innerHTML = a.octal_to_binary(input01.value)
+    if (verif_error(input01.value, 7) == "right") {
+      resul.innerHTML = a.octal_to_binary(input01.value)
+    }
   }
   else if (condit == 5) {
-    resul.innerHTML = a.octal_to_decimal(input01.value)
+    if (verif_error(input01.value, 7) == "right") {
+      resul.innerHTML = a.octal_to_decimal(input01.value)
+    }
   }
   else if (condit == 6) {
     resul.innerHTML = a.decimal_to_binary(input01.value)
