@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  height: 100vh;
+  text-align: center;
+
+  background-image: linear-gradient(to right, rgb(0, 89, 255), rgba(255, 0, 0, 0.5));
+  ;
+}
+
+header h1 {
+  font-size: 100px;
+  color: white;
+}
+
+header h3 {
+  font-size: 50px;
+}
+
+.entry h3 {
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+#num_bits {
+  width: 100px;
+  margin-right: 140px;
+  margin-left: 155px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+#num_bits,
+#number_x {
+  border-radius: 5px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#number_x {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  width: 230px;
+}
+
+button {
+  font-size: 25px;
+  padding: 0px 5px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+button:hover {
+  font-style: initial;
+  background-image: linear-gradient(to right, rgba(0, 89, 255, 0.209), rgba(255, 0, 0, 0.232));
+}
+
+.show {
+  margin: 20px 0px 20px 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer h3 {
+  font-size: 30px;
+}
